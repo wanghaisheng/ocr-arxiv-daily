@@ -1,7 +1,7 @@
-# Inuitive-paper-arxiv-daily latest papers around 3d Vision
-Automated deployment @ 2022-06-23 16:00:10 Asia/Shanghai
-> Welcome to contribute! Add your topics and keywords in [`topic.yml`](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/topic.yml).
-> You can also view historical data through the [storage](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/storage).
+# OCR-paper-arxiv-daily latest papers
+Automated deployment @ 2022-06-23 16:17:26 Asia/Shanghai
+> Welcome to contribute! Add your topics and keywords in [`topic.yml`](https://github.com/wanghaisheng/ocr-paper-daily/blob/main/database/topic.yml).
+> You can also view historical data through the [storage](https://github.com/wanghaisheng/ocr-paper-daily/blob/main/database/storage).
 
 ## OCR
 
