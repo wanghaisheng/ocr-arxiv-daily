@@ -1,4 +1,4 @@
-site_name: Inuitive-paper-daily
+site_name: ocr-paper-daily
 
 theme:
   name: material
@@ -6,7 +6,7 @@ theme:
   features:
     - navigation.indexes
 
-repo_url: https://github.com/wanghaisheng/Inuitive-paper-daily
+repo_url: https://github.com/wanghaisheng/ocr-arxiv-daily
 
 markdown_extensions:
   - def_list
