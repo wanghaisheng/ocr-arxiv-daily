@@ -1,0 +1,35 @@
+"Computer Vision":
+  "Image Classification": '"Image Classification"'
+  "Keypoint Detection": '"Keypoint Detection"OR"Feature Descriptor"'
+  "Image Matching": '"Image Matching"'
+  "Semantic Segmentation": '"Semantic Segmentation"'
+  "Instance Segmentation": '"Instance Segmentation"'
+  "Object Detection": '"Object Detection"OR"Object Detector"'
+  "Object Tracking": '"Object Tracking"OR"Visual Object Tracking"'
+  "Multi-Object Tracking": '"Multi-Object Tracking"OR"Multiple Ojbect Tracking"OR"MOT"OR"Multiple Visual Object Tracking"'
+
+"3D Vision":
+  "3D Object Detection": '"3D Object Detection"OR"3D Object Detector"OR"Point Cloud Object Detection"'
+  "3D Object Tracking": '"3D Object Tracking"OR"Point Cloud Object Tracking"OR"3D Multi-Object Tracking"'
+  "Point Cloud": '"Point Cloud"'
+  "Point Cloud Completion": '"Point Cloud Completion"'
+  "Point Cloud Segmentation": '"Point Cloud Segmentation"'
+  "Point Cloud Matching": '"Point Cloud Matching"'
+  "Point Cloud Registration": '"Point Cloud Registration"'
+  "Visual Localization": '"Camera Localization"OR"Visual Localization"OR"Camera Re-localisation"OR"Loop Closure Detection"OR"visual place recognition"OR"image retrieval"'
+  "Keypoint Detection": '"Keypoint Detection"OR"Feature Descriptor"'
+  "Image Matching": '"Image Matching"OR"Keypoint Matching"'
+
+"Transformer":
+  "Transformer": '"Transformer"'
+  "Vision Transformer": '"Vision Transformer"OR"Computer Vision Transformer"'
+
+
+"Robotics":
+  "Robotics": '"Robotics"'
+  "SLAM": '"SLAM"'
+  "SFM": '"SFM"OR"Structure from Motion"'
+  "Visual Localization": '"Camera Localization"OR"Visual Localization"OR"Camera Re-localisation"'
+
+"Camera":
+  "Camera": '"Camera"OR"multi camera"OR"video"'
