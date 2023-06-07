@@ -1,0 +1,992 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="OCR/OCR/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+    
+    
+      
+        <title>ocr-paper-daily</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-145083103-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ocr-paper-arxiv-daily-latest-papers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="ocr-paper-daily" class="md-header__button md-logo" aria-label="ocr-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ocr-paper-daily
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OCR-paper-arxiv-daily latest papers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wanghaisheng/ocr-arxiv-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="ocr-paper-daily" class="md-nav__button md-logo" aria-label="ocr-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ocr-paper-daily
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wanghaisheng/ocr-arxiv-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          OCR-paper-arxiv-daily latest papers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        OCR-paper-arxiv-daily latest papers
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ocr" class="md-nav__link">
+    OCR
+  </a>
+  
+    <nav class="md-nav" aria-label="OCR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ocr_1" class="md-nav__link">
+    OCR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene-text" class="md-nav__link">
+    scene text
+  </a>
+  
+    <nav class="md-nav" aria-label="scene text">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scene-text_1" class="md-nav__link">
+    scene text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          OCR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          OCR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OCR/OCR/" class="md-nav__link">
+        OCR
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Scene text
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Scene text
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="scene%20text/scene%20text/" class="md-nav__link">
+        Scene text
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ocr" class="md-nav__link">
+    OCR
+  </a>
+  
+    <nav class="md-nav" aria-label="OCR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ocr_1" class="md-nav__link">
+    OCR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene-text" class="md-nav__link">
+    scene text
+  </a>
+  
+    <nav class="md-nav" aria-label="scene text">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scene-text_1" class="md-nav__link">
+    scene text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="ocr-paper-arxiv-daily-latest-papers">OCR-paper-arxiv-daily latest papers</h1>
+<p>Automated deployment @ 2023-06-07 08:05:21 Asia/Shanghai</p>
+<blockquote>
+<p>Welcome to contribute! Add your topics and keywords in <a href="https://github.com/wanghaisheng/ocr-paper-daily/blob/main/database/topic.yml"><code>topic.yml</code></a>.
+You can also view historical data through the <a href="https://github.com/wanghaisheng/ocr-paper-daily/blob/main/database/storage">storage</a>.</p>
+</blockquote>
+<h2 id="ocr">OCR</h2>
+<h3 id="ocr_1">OCR</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Publish Date</th>
+<th align="center">Title</th>
+<th align="center">Authors</th>
+<th align="center">PDF</th>
+<th align="center">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Transformer-Based UNet with Multi-Headed Cross-Attention Skip Connections to Eliminate Artifacts in Scanned Documents</strong></td>
+<td align="center">David Kreuzer et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02815v1">2306.02815v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-03</strong></td>
+<td align="center"><strong>TransDocAnalyser: A Framework for Offline Semi-structured Handwritten Document Analysis in the Legal Domain</strong></td>
+<td align="center">Sagar Chakraborty et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02142v1">2306.02142v1</a></td>
+<td align="center"><a href="https://github.com/legaldocumentprocessing/fir_dataset_icdar2023">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-02</strong></td>
+<td align="center"><strong>DocFormerv2: Local Features for Document Understanding</strong></td>
+<td align="center">Srikar Appalaraju et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.01733v1">2306.01733v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-01</strong></td>
+<td align="center"><strong>Layout and Task Aware Instruction Prompt for Zero-shot Document Image Question Answering</strong></td>
+<td align="center">Wenjin Wang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.00526v1">2306.00526v1</a></td>
+<td align="center"><a href="https://github.com/wenjinw/latin-prompt">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-31</strong></td>
+<td align="center"><strong>Improving Handwritten OCR with Training Samples Generated by Glyph Conditional Denoising Diffusion Probabilistic Model</strong></td>
+<td align="center">Haisong Ding et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.19543v1">2305.19543v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-30</strong></td>
+<td align="center"><strong>DuoSearch: A Novel Search Engine for Bulgarian Historical Documents</strong></td>
+<td align="center">Angel Beshirov et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.19392v1">2305.19392v1</a></td>
+<td align="center"><a href="https://github.com/angelbeshirov/duosearch">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-29</strong></td>
+<td align="center"><strong>GlyphControl: Glyph Conditional Control for Visual Text Generation</strong></td>
+<td align="center">Yukang Yang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.18259v1">2305.18259v1</a></td>
+<td align="center"><a href="https://github.com/aigtext/glyphcontrol-release">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-28</strong></td>
+<td align="center"><strong>FuseCap: Leveraging Large Language Models to Fuse Visual Data into Enriched Image Captions</strong></td>
+<td align="center">Noam Rotstein et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.17718v1">2305.17718v1</a></td>
+<td align="center"><a href="https://github.com/RotsteinNoam/FuseCap">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-27</strong></td>
+<td align="center"><strong>Exploring Better Text Image Translation with Multimodal Codebook</strong></td>
+<td align="center">Zhibin Lan et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.17415v2">2305.17415v2</a></td>
+<td align="center"><a href="https://github.com/deeplearnxmu/mc_tit">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-27</strong></td>
+<td align="center"><strong>Super-Resolution of License Plate Images Using Attention Modules and Sub-Pixel Convolution Layers</strong></td>
+<td align="center">Valfride Nascimento et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.17313v1">2305.17313v1</a></td>
+<td align="center"><a href="https://github.com/valfride/lpr-rsr-ext">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-26</strong></td>
+<td align="center"><strong>People and Places of Historical Europe: Bootstrapping Annotation Pipeline and a New Corpus of Named Entities in Late Medieval Texts</strong></td>
+<td align="center">Vít Novotný et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.16718v1">2305.16718v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-24</strong></td>
+<td align="center"><strong>Quantifying Character Similarity with Vision Transformers</strong></td>
+<td align="center">Xinmei Yang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.14672v1">2305.14672v1</a></td>
+<td align="center"><a href="https://github.com/dell-research-harvard/quantifying-character-similarity">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-21</strong></td>
+<td align="center"><strong>Measuring Intersectional Biases in Historical Documents</strong></td>
+<td align="center">Nadav Borenstein et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.12376v1">2305.12376v1</a></td>
+<td align="center"><a href="https://github.com/copenlu/intersectional-bias-pbw">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-19</strong></td>
+<td align="center"><strong>XTREME-UP: A User-Centric Scarce-Data Benchmark for Under-Represented Languages</strong></td>
+<td align="center">Sebastian Ruder et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.11938v2">2305.11938v2</a></td>
+<td align="center"><a href="https://github.com/google-research/xtreme-up">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-18</strong></td>
+<td align="center"><strong>TextDiffuser: Diffusion Models as Text Painters</strong></td>
+<td align="center">Jingye Chen et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.10855v2">2305.10855v2</a></td>
+<td align="center"><a href="https://github.com/microsoft/unilm/tree/master/textdiffuser">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-16</strong></td>
+<td align="center"><strong>Sequence-to-Sequence Pre-training with Unified Modality Masking for Visual Document Understanding</strong></td>
+<td align="center">Shuwei Feng et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.10448v1">2305.10448v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-16</strong></td>
+<td align="center"><strong>Mobile User Interface Element Detection Via Adaptively Prompt Tuning</strong></td>
+<td align="center">Zhangxuan Gu et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.09699v1">2305.09699v1</a></td>
+<td align="center"><a href="https://github.com/antmachineintelligence/mui-zh">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-13</strong></td>
+<td align="center"><strong>On the Hidden Mystery of OCR in Large Multimodal Models</strong></td>
+<td align="center">Yuliang Liu et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.07895v2">2305.07895v2</a></td>
+<td align="center"><a href="https://github.com/yuliang-liu/multimodalocr">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-12</strong></td>
+<td align="center"><strong>Visual Information Extraction in the Wild: Practical Dataset and End-to-end Solution</strong></td>
+<td align="center">Jianfeng Kuang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.07498v1">2305.07498v1</a></td>
+<td align="center"><a href="https://github.com/jfkuang/cfam">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-11</strong></td>
+<td align="center"><strong>Combining OCR Models for Reading Early Modern Printed Books</strong></td>
+<td align="center">Mathias Seuret et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.07131v1">2305.07131v1</a></td>
+<td align="center"><a href="https://github.com/seuretm/combined-ocr">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-09</strong></td>
+<td align="center"><strong>E2TIMT: Efficient and Effective Modal Adapter for Text Image Machine Translation</strong></td>
+<td align="center">Cong Ma et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.05166v2">2305.05166v2</a></td>
+<td align="center"><a href="https://github.com/ericongma/e2timt">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-04</strong></td>
+<td align="center"><strong>Text Reading Order in Uncontrolled Conditions by Sparse Graph Segmentation</strong></td>
+<td align="center">Renshen Wang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.02577v1">2305.02577v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-05-03</strong></td>
+<td align="center"><strong>Evaluating BERT-based Scientific Relation Classifiers for Scholarly Knowledge Graph Construction on Digital Library Collections</strong></td>
+<td align="center">Ming Jiang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2305.02291v1">2305.02291v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-28</strong></td>
+<td align="center"><strong>LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model</strong></td>
+<td align="center">Peng Gao et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.15010v1">2304.15010v1</a></td>
+<td align="center"><a href="https://github.com/zrrskywalker/llama-adapter">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-24</strong></td>
+<td align="center"><strong>DocParser: End-to-end OCR-free Information Extraction from Visually Rich Documents</strong></td>
+<td align="center">Mohamed Dhouib et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.12484v2">2304.12484v2</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-24</strong></td>
+<td align="center"><strong>ICDAR 2023 Competition on Reading the Seal Title</strong></td>
+<td align="center">Wenwen Yu et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.11966v2">2304.11966v2</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-17</strong></td>
+<td align="center"><strong>Multimodal Short Video Rumor Detection System Based on Contrastive Learning</strong></td>
+<td align="center">Yuxing Yang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.08401v3">2304.08401v3</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-15</strong></td>
+<td align="center"><strong>TransDocs: Optical Character Recognition with word to word translation</strong></td>
+<td align="center">Abhishek Bamotra et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.07637v1">2304.07637v1</a></td>
+<td align="center"><a href="https://github.com/abhishekbamotra/transdocs">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-07</strong></td>
+<td align="center"><strong>Linking Representations with Multimodal Contrastive Learning</strong></td>
+<td align="center">Abhishek Arora et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.03464v2">2304.03464v2</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-04-07</strong></td>
+<td align="center"><strong>Cleansing Jewel: A Neural Spelling Correction Model Built On Google OCR-ed Tibetan Manuscripts</strong></td>
+<td align="center">Queenie Luo et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2304.03427v1">2304.03427v1</a></td>
+<td align="center">null</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scene-text">scene text</h2>
+<h3 id="scene-text_1">scene text</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Publish Date</th>
+<th align="center">Title</th>
+<th align="center">Authors</th>
+<th align="center">PDF</th>
+<th align="center">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Neuralangelo: High-Fidelity Neural Surface Reconstruction</strong></td>
+<td align="center">Zhaoshuo Li et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03092v1">2306.03092v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Brain Diffusion for Visual Exploration: Cortical Discovery using Large Scale Generative Models</strong></td>
+<td align="center">Andrew F. Luo et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03089v1">2306.03089v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Machine Learning and Statistical Approaches to Measuring Similarity of Political Parties</strong></td>
+<td align="center">Daria Boratyn et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03079v1">2306.03079v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Interactive Editing for Text Summarization</strong></td>
+<td align="center">Yujia Xie et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03067v1">2306.03067v1</a></td>
+<td align="center"><a href="https://github.com/microsoft/interactive-summarization">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Of Mice and Mates: Automated Classification and Modelling of Mouse Behaviour in Groups using a Single Model across Cages</strong></td>
+<td align="center">Michael P. J. Camilleri et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03066v1">2306.03066v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Structured Voronoi Sampling</strong></td>
+<td align="center">Afra Amini et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03061v1">2306.03061v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>ELEV-VISION: Automated Lowest Floor Elevation Estimation from Segmenting Street View Images</strong></td>
+<td align="center">Yu-Hsuan Ho et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03050v1">2306.03050v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Designing Equilibria in Concurrent Games with Social Welfare and Temporal Logic Constraints</strong></td>
+<td align="center">Julian Gutierrez et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03045v1">2306.03045v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>HeadSculpt: Crafting 3D Head Avatars with Text</strong></td>
+<td align="center">Xiao Han et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03038v1">2306.03038v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Tackling Cooperative Incompatibility for Zero-Shot Human-AI Coordination</strong></td>
+<td align="center">Yang Li et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03034v1">2306.03034v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Interpretable Alzheimer's Disease Classification Via a Contrastive Diffusion Autoencoder</strong></td>
+<td align="center">Ayodeji Ijishakin et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03022v1">2306.03022v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Automating Style Analysis and Visualization With Explainable AI -- Case Studies on Brand Recognition</strong></td>
+<td align="center">Yu-hsuan Chen et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03021v1">2306.03021v1</a></td>
+<td align="center"><a href="https://github.com/parksandrecfan/bignet-phone">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Using Sequences of Life-events to Predict Human Lives</strong></td>
+<td align="center">Germans Savcisens et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03009v1">2306.03009v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Nonparametric Iterative Machine Teaching</strong></td>
+<td align="center">Chen Zhang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03007v1">2306.03007v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Unveiling the Two-Faced Truth: Disentangling Morphed Identities for Face Morphing Detection</strong></td>
+<td align="center">Eduarda Caldeira et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03002v1">2306.03002v1</a></td>
+<td align="center"><a href="https://github.com/netopedro/idistill">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>BeyondPixels: A Comprehensive Review of the Evolution of Neural Radiance Fields</strong></td>
+<td align="center">AKM Shahariar Azad Rabby et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.03000v1">2306.03000v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Long-range UAV Thermal Geo-localization with Satellite Imagery</strong></td>
+<td align="center">Jiuhong Xiao et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02994v1">2306.02994v1</a></td>
+<td align="center"><a href="https://github.com/arplaboratory/satellite-thermal-geo-localization">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Second-scale rotational coherence and dipolar interactions in a gas of ultracold polar molecules</strong></td>
+<td align="center">Philip D. Gregory et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02991v1">2306.02991v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Integrated Sensing, Computation, and Communication for UAV-assisted Federated Edge Learning</strong></td>
+<td align="center">Yao Tang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02990v1">2306.02990v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Brain tumor segmentation using synthetic MR images -- A comparison of GANs and diffusion models</strong></td>
+<td align="center">Muhammad Usman Akbar et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02986v1">2306.02986v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>A Term-based Approach for Generating Finite Automata from Interaction Diagrams</strong></td>
+<td align="center">Erwan Mahe et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02983v1">2306.02983v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Which Argumentative Aspects of Hate Speech in Social Media can be reliably identified?</strong></td>
+<td align="center">Damián Furman et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02978v1">2306.02978v1</a></td>
+<td align="center"><a href="https://github.com/asohmo/asohmo-dataset">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Best of Both Worlds: Hybrid SNN-ANN Architecture for Event-based Optical Flow Estimation</strong></td>
+<td align="center">Shubham Negi et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02960v1">2306.02960v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Complex Preferences for Different Convergent Priors in Discrete Graph Diffusion</strong></td>
+<td align="center">Alex M. Tseng et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02957v1">2306.02957v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Explicit Neural Surfaces: Learning Continuous Geometry With Deformation Fields</strong></td>
+<td align="center">Thomas Walker et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02956v1">2306.02956v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>A Simple and Flexible Modeling for Mental Disorder Detection by Learning from Clinical Questionnaires</strong></td>
+<td align="center">Hoyun Song et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02955v1">2306.02955v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Color-aware Deep Temporal Backdrop Duplex Matting System</strong></td>
+<td align="center">Hendrik Hachmann et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02954v1">2306.02954v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>INDigo: An INN-Guided Probabilistic Diffusion Algorithm for Inverse Problems</strong></td>
+<td align="center">Di You et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02949v1">2306.02949v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Continual Learning with Pretrained Backbones by Tuning in the Input Space</strong></td>
+<td align="center">Simone Marullo et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02947v1">2306.02947v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-05</strong></td>
+<td align="center"><strong>Human Spine Motion Capture using Perforated Kinesiology Tape</strong></td>
+<td align="center">Hendrik Hachmann et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.02930v1">2306.02930v1</a></td>
+<td align="center"><a href="https://github.com/hendrik-hachmann/spinemocap">link</a></td>
+</tr>
+</tbody>
+</table>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>
